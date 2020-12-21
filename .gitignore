@@ -5,3 +5,6 @@
 /DockerConsoleApp/.vs/DockerConsoleApp/v16/.suo
 /DockerConsoleApp/DockerConsoleApp/bin/Debug/netcoreapp3.1
 /DockerConsoleApp/DockerConsoleApp/obj
+/DockerWebApp/DockerWebApp/bin
+/DockerWebApp/DockerWebApp/obj
+/DockerWebApp/.vs/DockerWebApp
