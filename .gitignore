@@ -8,3 +8,7 @@
 /DockerWebApp/DockerWebApp/bin
 /DockerWebApp/DockerWebApp/obj
 /DockerWebApp/.vs/DockerWebApp
+/DockerWebAPIWithDB/.vs
+/DockerWebAPIWithDB/DockerWebAPIWithDB/bin
+/DockerWebAPIWithDB/DockerWebAPIWithDB/obj
+/DockerWebAPIWithDB/DockerWebAPIWithDB/DockerWebAPIWithDB.csproj.user
