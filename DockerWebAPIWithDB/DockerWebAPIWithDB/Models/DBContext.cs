@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 #nullable disable
 
@@ -33,7 +31,6 @@ namespace DockerWebAPIWithDB.Models
 
             modelBuilder.Entity<User>(entity =>
             {
-                entity.HasNoKey();
 
                 entity.ToTable("USERS");
 
@@ -55,11 +52,6 @@ namespace DockerWebAPIWithDB.Models
                     .HasMaxLength(200)
                     .IsUnicode(false);
 
-                entity.Property(e => e.IsActive)
-                    .HasMaxLength(1)
-                    .IsUnicode(false)
-                    .IsFixedLength(true);
-
                 entity.Property(e => e.ModifiedBy)
                     .HasMaxLength(200)
                     .IsUnicode(false);
@@ -68,6 +60,10 @@ namespace DockerWebAPIWithDB.Models
 
                 entity.Property(e => e.UserName)
                     .HasMaxLength(100)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.PasswordHash)
+                    .IsRequired()
                     .IsUnicode(false);
             });
 

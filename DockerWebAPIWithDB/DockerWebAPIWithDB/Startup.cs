@@ -9,9 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
-using System.Reflection;
-using System.IO;
-using System;
+using DockerWebAPIWithDB.BusinessLogic.WebAPI.Security;
 
 namespace DockerWebApp
 {
@@ -34,6 +32,7 @@ namespace DockerWebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddTransient<IPasswordHasher, PasswordHasher>();
             services.AddTransient<IUserBL, UserBL>();
             services.AddTransient<IUserRepository, UserRepository>();
             //services.AddSwaggerGen(options =>

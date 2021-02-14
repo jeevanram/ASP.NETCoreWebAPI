@@ -1,13 +1,11 @@
-﻿using DockerWebAPIWithDB.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using DockerWebAPIWithDB.DTO;
 
 namespace DockerWebAPIWithDB.BusinessLogic.Interface
 {
     public interface IUserBL
     {
-        public User GetUser(string userName);
+        public UserResponseDTO GetUser(string userName);
+        public void AddUser(UserRequestDTO user);
+        public bool AuthenticateUser(string userName, string password);
     }
 }

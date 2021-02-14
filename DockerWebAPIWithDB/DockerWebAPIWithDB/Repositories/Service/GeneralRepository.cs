@@ -10,7 +10,6 @@ namespace DockerWebAPIWithDB.Repositories
     {
         protected readonly DbContext context;
         protected DbSet<T> entities;
-        string errorMessage = string.Empty;
         public GeneralRepository(DbContext context)
         {
             this.context = context;

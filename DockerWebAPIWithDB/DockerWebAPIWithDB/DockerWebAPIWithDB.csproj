@@ -21,4 +21,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebAPI.Security\WebAPI.Security.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -12,3 +12,5 @@
 /DockerWebAPIWithDB/DockerWebAPIWithDB/bin
 /DockerWebAPIWithDB/DockerWebAPIWithDB/obj
 /DockerWebAPIWithDB/DockerWebAPIWithDB/DockerWebAPIWithDB.csproj.user
+/DockerWebAPIWithDB/WebAPI.Security/bin/Debug/netcoreapp3.1
+/DockerWebAPIWithDB/WebAPI.Security/obj

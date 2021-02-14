@@ -1,9 +1,6 @@
 ﻿using DockerWebAPIWithDB.Models;
 using DockerWebAPIWithDB.Repositories.Interface;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DockerWebAPIWithDB.Repositories.Service
 {
